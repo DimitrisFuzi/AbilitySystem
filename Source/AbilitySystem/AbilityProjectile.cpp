@@ -1,5 +1,6 @@
 #include "AbilityProjectile.h"
 #include "Components/SphereComponent.h"
+#include "IDamageable.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 
 AAbilityProjectile::AAbilityProjectile()
@@ -51,6 +52,10 @@ void AAbilityProjectile::OnSphereOverlap(
 
     UE_LOG(LogTemp, Log, TEXT("AbilityProjectile — hit %s"), *OtherActor->GetName());
 
-    // IDamageable check goes here in Phase 4 — for now just log and destroy
+    if (OtherActor->Implements<UDamageable>())
+    {
+        IDamageable::Execute_ReceiveDamage(OtherActor, Damage, GetInstigator());
+    }
+
     Destroy();
 }
