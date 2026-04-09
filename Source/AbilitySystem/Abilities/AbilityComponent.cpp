@@ -30,6 +30,7 @@ void UAbilityComponent::EquipAbility(int32 SlotIndex, TSubclassOf<UAbility> Abil
 
 void UAbilityComponent::TriggerSlot(int32 SlotIndex)
 {
+
     if (!Slots.IsValidIndex(SlotIndex))
     {
         UE_LOG(LogTemp, Warning, TEXT("TriggerSlot — invalid slot %d"), SlotIndex);
