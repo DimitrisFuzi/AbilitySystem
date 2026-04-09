@@ -27,8 +27,8 @@ bool UFireProjectileAbility::Activate_Implementation(AActor* InstigatorActor)
         return false;
     }
 
-    const FVector SpawnLocation = Camera->GetComponentLocation() + Camera->GetForwardVector() * SpawnOffset;
-    const FRotator SpawnRotation = Camera->GetComponentRotation();
+    const FVector SpawnLocation = Character->GetActorLocation() + Character->GetActorForwardVector() * SpawnOffset;
+    const FRotator SpawnRotation = Character->GetActorRotation();
 
     FActorSpawnParameters SpawnParams;
     SpawnParams.Instigator = Character;

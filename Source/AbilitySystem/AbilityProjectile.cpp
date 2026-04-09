@@ -17,6 +17,7 @@ AAbilityProjectile::AAbilityProjectile()
     ProjectileMovement->bRotationFollowsVelocity = true;
 
     InitialLifeSpan = ProjectileLifeSpan;
+    ProjectileMovement->ProjectileGravityScale = 0.0f;
 }
 
 void AAbilityProjectile::BeginPlay()
@@ -44,6 +45,9 @@ void AAbilityProjectile::OnSphereOverlap(
     {
         return;
     }
+    // Guard against multiple overlap callbacks before Destroy() completes
+    if (bHasHit) return;
+    bHasHit = true;
 
     UE_LOG(LogTemp, Log, TEXT("AbilityProjectile — hit %s"), *OtherActor->GetName());
 
