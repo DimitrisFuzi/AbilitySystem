@@ -23,6 +23,7 @@ void UAbilityComponent::EquipAbility(int32 SlotIndex, TSubclassOf<UAbility> Abil
 
     UAbility* NewAbility = NewObject<UAbility>(this, AbilityClass);
     Slots[SlotIndex] = NewAbility;
+    OnSlotChanged.Broadcast(SlotIndex);
 
     UE_LOG(LogTemp, Log, TEXT("EquipAbility — equipped %s in slot %d"),
         *AbilityClass->GetName(), SlotIndex);
@@ -55,6 +56,7 @@ void UAbilityComponent::TriggerSlot(int32 SlotIndex)
     if (Ability->Activate(GetOwner()))
     {
         Ability->StartCooldown();
+        OnSlotChanged.Broadcast(SlotIndex);
     }
 }
 
