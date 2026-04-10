@@ -2,7 +2,6 @@
 #include "AbilityProjectile.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/Character.h"
-#include "Camera/CameraComponent.h"
 
 bool UFireProjectileAbility::Activate_Implementation(AActor* InstigatorActor)
 {
@@ -16,14 +15,6 @@ bool UFireProjectileAbility::Activate_Implementation(AActor* InstigatorActor)
     if (!Character)
     {
         UE_LOG(LogTemp, Warning, TEXT("FireProjectileAbility — instigator is not a Character"));
-        return false;
-    }
-
-    // Get camera component for aim direction
-    UCameraComponent* Camera = Character->FindComponentByClass<UCameraComponent>();
-    if (!Camera)
-    {
-        UE_LOG(LogTemp, Warning, TEXT("FireProjectileAbility — no CameraComponent found on instigator"));
         return false;
     }
 
@@ -43,5 +34,9 @@ bool UFireProjectileAbility::Activate_Implementation(AActor* InstigatorActor)
     AAbilityProjectile* Projectile = World->SpawnActor<AAbilityProjectile>(
         ProjectileClass, SpawnLocation, SpawnRotation, SpawnParams);
 
+    if (Projectile)
+    {
+        Projectile->Damage = Damage;
+    }
     return Projectile != nullptr;
 }
