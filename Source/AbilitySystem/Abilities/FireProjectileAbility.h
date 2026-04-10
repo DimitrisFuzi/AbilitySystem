@@ -20,4 +20,7 @@ public:
 
     UPROPERTY(EditDefaultsOnly, Category = "Ability|Projectile")
     float SpawnOffset = 100.0f;
+
+    UPROPERTY(EditDefaultsOnly, Category = "Ability|Projectile")
+    float Damage = 25.0f;
 };

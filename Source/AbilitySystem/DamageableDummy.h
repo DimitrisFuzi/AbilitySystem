@@ -13,10 +13,10 @@ class ABILITYSYSTEM_API ADamageableDummy : public AActor, public IDamageable
 public:
     ADamageableDummy();
 
-    UPROPERTY(EditDefaultsOnly, Category = "Health")
+    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Health")
     float MaxHealth = 100.0f;
 
-    UPROPERTY(VisibleInstanceOnly, Category = "Health")
+    UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Health")
     float CurrentHealth = 100.0f;
 
     virtual void ReceiveDamage_Implementation(float Amount, AActor* InstigatorActor) override;

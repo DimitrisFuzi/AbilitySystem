@@ -21,7 +21,6 @@ public:
     UPROPERTY(VisibleAnywhere)
     TObjectPtr<UProjectileMovementComponent> ProjectileMovement;
 
-    UPROPERTY(EditDefaultsOnly, Category = "Projectile")
     float Damage = 10.0f;
 
     UPROPERTY(EditDefaultsOnly, Category = "Projectile")
