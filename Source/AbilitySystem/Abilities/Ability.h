@@ -18,6 +18,9 @@ public:
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Ability|Cooldown")
 	float NextReadyTime = 0.0f;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly,  Category = "Ability|Display")
+	TObjectPtr<UTexture2D> Icon;
+
 	
 
 	UFUNCTION(BlueprintCallable, Category = "Ability|Cooldown")
