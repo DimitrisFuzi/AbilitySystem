@@ -50,8 +50,6 @@ void AAbilityProjectile::OnSphereOverlap(
     if (bHasHit) return;
     bHasHit = true;
 
-    UE_LOG(LogTemp, Log, TEXT("AbilityProjectile — hit %s"), *OtherActor->GetName());
-
     if (OtherActor->Implements<UDamageable>())
     {
         IDamageable::Execute_ReceiveDamage(OtherActor, Damage, GetInstigator());

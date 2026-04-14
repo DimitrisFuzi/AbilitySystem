@@ -25,8 +25,6 @@ void UAbilityComponent::EquipAbility(int32 SlotIndex, TSubclassOf<UAbility> Abil
     Slots[SlotIndex] = NewAbility;
     OnSlotChanged.Broadcast(SlotIndex);
 
-    UE_LOG(LogTemp, Log, TEXT("EquipAbility — equipped %s in slot %d"),
-        *AbilityClass->GetName(), SlotIndex);
 }
 
 void UAbilityComponent::TriggerSlot(int32 SlotIndex)
@@ -34,7 +32,6 @@ void UAbilityComponent::TriggerSlot(int32 SlotIndex)
 
     if (!Slots.IsValidIndex(SlotIndex))
     {
-        UE_LOG(LogTemp, Warning, TEXT("TriggerSlot — invalid slot %d"), SlotIndex);
         return;
     }
 
@@ -42,14 +39,11 @@ void UAbilityComponent::TriggerSlot(int32 SlotIndex)
 
     if (!Ability)
     {
-        UE_LOG(LogTemp, Log, TEXT("TriggerSlot — slot %d is empty"), SlotIndex);
         return;
     }
 
     if (!Ability->CanActivate())
     {
-        UE_LOG(LogTemp, Log, TEXT("TriggerSlot — slot %d on cooldown, %.1fs remaining"),
-            SlotIndex, Ability->GetRemainingCooldown());
         return;
     }
     

@@ -1,6 +1,5 @@
 #include "FireProjectileAbility.h"
 #include "AbilityProjectile.h"
-#include "GameFramework/Actor.h"
 #include "GameFramework/Character.h"
 
 bool UFireProjectileAbility::Activate_Implementation(AActor* InstigatorActor)

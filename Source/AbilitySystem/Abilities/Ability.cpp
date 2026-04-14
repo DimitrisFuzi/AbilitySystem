@@ -4,7 +4,6 @@
 #include "Math/UnrealMathUtility.h"
 
 // UAbility is a UObject, so it doesn't inherently know its UWorld.
-// We forward world lookup to our owner (Outer), typically the UAbilityComponent / Actor.
 UWorld* UAbility::GetWorld() const
 {
 	if (const UObject* OuterObj = GetOuter())
@@ -20,7 +19,7 @@ float UAbility::GetRemainingCooldown() const
 	const UWorld* World = GetWorld();
 	if (!World)
 	{
-		// No world context (e.g. editor/default object). Treat as ready to avoid crashes.
+		// No world context. Treat as ready to avoid crashes.
 		return 0.0f;
 	}
 
@@ -47,7 +46,5 @@ void UAbility::StartCooldown()
 
 bool UAbility::Activate_Implementation(AActor* InstigatorActor)
 {
-	// Base class does nothing by default.
-	// Specific abilities override this in BP or derived C++ classes.
 	return true;
 }

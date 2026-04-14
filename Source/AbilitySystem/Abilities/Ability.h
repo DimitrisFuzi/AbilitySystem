@@ -28,7 +28,7 @@ public:
 
 	bool CanActivate() const;
 
-	//Called when the ability is triggered. Override in BP or derived C++. Return true if activation succeeded.
+	//Called when the ability is triggered.
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Ability")
 	bool Activate(AActor* InstigatorActor);
 	virtual bool Activate_Implementation(AActor* InstigatorActor);
