@@ -59,7 +59,7 @@ Per-slot Input Actions (`IA_TriggerSlot0`–`IA_TriggerSlot3`). Adding a slot me
 
 The `Pressed` trigger is defined in each Input Action asset rather than handled via pin selection in the graph — behavior defined at the asset level is more explicit.
 
-**`[SCREENSHOT: IMC_Gameplay showing the 4 Input Actions mapped to keys 1-4]`**
+![IMC_Gameplay showing 4 Input Actions mapped to keys 1-4](Images/2_imc_gameplay_mappings.PNG)
 
 ---
 
@@ -83,7 +83,7 @@ Two custom entries in Project Settings:
 
 **`Damageable` Object Channel** — `WorldDynamic` would catch any moving actor. A custom channel keeps the intent explicit and the projectile profile tight.
 
-**`[SCREENSHOT: Project Settings showing the Projectile collision preset and Damageable object channel]`**
+![Projectile collision preset and Damageable object channel in Project Settings](Images/3a_collision_profile.PNG)
 
 ---
 
@@ -119,7 +119,7 @@ The delegate handles discrete events. Cooldown countdown is different — time p
 
 Icon dimming passes `bIsOnCooldown` into `UpdateSlot` rather than parsing the cooldown text string.
 
-**`[SCREENSHOT: In-game HUD showing slot 0 on cooldown (dimmed, countdown) and slot 1 ready]`**
+![HUD showing slot 0 on cooldown and slot 1 ready](Images/4_hud_cooldown.PNG)
 
 ---
 
@@ -131,7 +131,7 @@ Hit flash uses a Dynamic Material Instance created on `BeginPlay`. The original 
 
 `BP_DamageableDummy_Base` holds all shared logic; child Blueprints only override mesh and material.
 
-**`[SCREENSHOT: In-game health bar above a golem, partially depleted]`**
+![World-space health bar above a golem, partially depleted](Images/5_health_bar_ingame.PNG)
 
 ---
 
