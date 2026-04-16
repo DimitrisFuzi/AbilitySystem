@@ -72,7 +72,7 @@ See [TECHNICAL.md](Docs/TECHNICAL.md) for full implementation details and design
 ## Build
 
 - Platform: Windows
-- Download: [GitHub Releases]([https://github.com/DimitrisFuzi/AbilitySystem/releases/tag/v1.0.0])
+- Download: [GitHub Releases](https://github.com/DimitrisFuzi/AbilitySystem/releases/tag/v1.0.0)
 
 ---
 
