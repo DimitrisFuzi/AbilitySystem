@@ -2,6 +2,7 @@
 
 A third-person prototype demonstrating **Unreal Engine C++ gameplay systems architecture** — ability slots, projectile abilities, interface-based damage, and an event-driven HUD.
 
+> Note: This is a lightweight custom ability system (not Unreal’s Gameplay Ability System / GAS).
 ---
 
 ## Systems implemented
@@ -15,7 +16,7 @@ A third-person prototype demonstrating **Unreal Engine C++ gameplay systems arch
 ## Quick links
 
 - **Systems highlight video:** https://youtu.be/yPW6ly3kf84
-- **Tech breakdown:** [TECHNICAL.md](Docs/TECHNICAL.md)
+- **Tech breakdown:** [**(TECHNICAL.md)**](https://github.com/DimitrisFuzi/AbilitySystem/blob/main/docs/TECHNICAL.md)
 - **Download (Windows):** [GitHub Releases](https://github.com/DimitrisFuzi/AbilitySystem/releases/tag/v1.0.0)
 - **Itch.io:** https://fouzis.itch.io/unreal-ability-system-prototype-cpp
 
@@ -40,7 +41,7 @@ Abilities are `UObject` subclasses instanced per slot by `UAbilityComponent` (`U
 
 Projectile abilities spawn `AAbilityProjectile` actors which apply damage through the `IDamageable` interface — the projectile has no dependency on any specific enemy class.
 
-See [TECHNICAL.md](Docs/TECHNICAL.md) for full implementation details and design decisions.
+See [**(TECHNICAL.md)**](https://github.com/DimitrisFuzi/AbilitySystem/blob/main/docs/TECHNICAL.md) for full implementation details and design decisions.
 
 ---
 
