@@ -43,6 +43,7 @@ Projectile abilities spawn `AAbilityProjectile` actors which apply damage throug
 
 See [**(TECHNICAL.md)**](https://github.com/DimitrisFuzi/AbilitySystem/blob/main/docs/TECHNICAL.md) for full implementation details and design decisions.
 
+![Ability System Showcase](docs/Images/Ability_System_Gif.gif)
 ---
 
 ## Known limitations
