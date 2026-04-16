@@ -83,7 +83,7 @@ Two custom entries in Project Settings:
 
 **`Damageable` Object Channel** — `WorldDynamic` would catch any moving actor. A custom channel keeps the intent explicit and the projectile profile tight.
 
-![Projectile collision preset and Damageable object channel in Project Settings](Images/3_collision_settings.PNG)
+![Projectile collision preset and Damageable object channel in Project Settings](Images/3_collision_settings.png)
 
 ---
 
@@ -119,7 +119,7 @@ The delegate handles discrete events. Cooldown countdown is different — time p
 
 Icon dimming passes `bIsOnCooldown` into `UpdateSlot` rather than parsing the cooldown text string.
 
-![HUD showing slot 0 on cooldown and slot 1 ready](Images/4_hud_cooldown.PNG)
+![HUD showing slot 0 on cooldown and slot 1 ready](Images/4_hud_cooldown.png)
 
 ---
 
@@ -131,7 +131,7 @@ Hit flash uses a Dynamic Material Instance created on `BeginPlay`. The original 
 
 `BP_DamageableDummy_Base` holds all shared logic; child Blueprints only override mesh and material.
 
-![World-space health bar above a golem, partially depleted](Images/5_health_bar_ingame.PNG)
+![World-space health bar above a golem, partially depleted](Images/5_health_bar_ingame.png)
 
 ---
 
