@@ -41,7 +41,7 @@ Abilities are `UObject` subclasses instanced per slot by `UAbilityComponent` (`U
 
 Projectile abilities spawn `AAbilityProjectile` actors which apply damage through the `IDamageable` interface — the projectile has no dependency on any specific enemy class.
 
-See [TECHNICAL.md]([Docs/TECHNICAL.md](https://github.com/DimitrisFuzi/AbilitySystem/blob/main/docs/TECHNICAL.md)) for full implementation details and design decisions.
+See [**(TECHNICAL.md)**](https://github.com/DimitrisFuzi/AbilitySystem/blob/main/docs/TECHNICAL.md) for full implementation details and design decisions.
 
 ---
 
