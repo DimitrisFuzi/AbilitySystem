@@ -49,7 +49,7 @@ if (Ability->Activate(GetOwner()))
 }
 ```
 
-**`[SCREENSHOT: Components panel showing UAbilityComponent on BP_ThirdPersonCharacter]`**
+![UAbilityComponent on BP_ThirdPersonCharacter](Images/1_ability_component_character.png)
 
 ---
 
