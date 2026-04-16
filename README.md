@@ -1,7 +1,7 @@
 # Unreal Ability System Prototype (C++)
 
 A third-person prototype demonstrating **Unreal Engine C++ gameplay systems architecture** — ability slots, projectile abilities, interface-based damage, and an event-driven HUD.
-
+Note: This is a lightweight custom ability system (not Epic’s Gameplay Ability System / GAS).
 ---
 
 ## Systems implemented
