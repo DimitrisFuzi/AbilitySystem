@@ -16,7 +16,7 @@ A third-person prototype demonstrating **Unreal Engine C++ gameplay systems arch
 
 - **Systems highlight video:** https://youtu.be/yPW6ly3kf84
 - **Tech breakdown:** [TECHNICAL.md](Docs/TECHNICAL.md)
-- **Download (Windows):** [GitHub Releases]([RELEASE_URL])
+- **Download (Windows):** [GitHub Releases]([https://github.com/DimitrisFuzi/AbilitySystem/releases/tag/v1.0.0])
 
 ---
 
@@ -72,7 +72,7 @@ See [TECHNICAL.md](Docs/TECHNICAL.md) for full implementation details and design
 ## Build
 
 - Platform: Windows
-- Download: [GitHub Releases]([RELEASE_URL])
+- Download: [GitHub Releases]([https://github.com/DimitrisFuzi/AbilitySystem/releases/tag/v1.0.0])
 
 ---
 
