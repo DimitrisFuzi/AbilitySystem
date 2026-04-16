@@ -49,7 +49,7 @@ if (Ability->Activate(GetOwner()))
 }
 ```
 
-![UAbilityComponent on BP_ThirdPersonCharacter](Images/1_ability_component_character.png)
+![UAbilityComponent on BP_ThirdPersonCharacter](Images/1_ability_component_character.PNG)
 
 ---
 
