@@ -83,7 +83,7 @@ Two custom entries in Project Settings:
 
 **`Damageable` Object Channel** — `WorldDynamic` would catch any moving actor. A custom channel keeps the intent explicit and the projectile profile tight.
 
-![Projectile collision preset and Damageable object channel in Project Settings](Images/3a_collision_profile.PNG)
+![Projectile collision preset and Damageable object channel in Project Settings](Images/3_collision_settings.PNG)
 
 ---
 
