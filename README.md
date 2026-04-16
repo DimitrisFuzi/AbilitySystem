@@ -16,7 +16,7 @@ Note: This is a lightweight custom ability system (not Epic’s Gameplay Ability
 ## Quick links
 
 - **Systems highlight video:** https://youtu.be/yPW6ly3kf84
-- **Tech breakdown:** [**(Docs/TECHNICAL.md)**](https://github.com/DimitrisFuzi/AbilitySystem/blob/main/docs/TECHNICAL.md)
+- **Tech breakdown:** [**(TECHNICAL.md)**](https://github.com/DimitrisFuzi/AbilitySystem/blob/main/docs/TECHNICAL.md)
 - **Download (Windows):** [GitHub Releases](https://github.com/DimitrisFuzi/AbilitySystem/releases/tag/v1.0.0)
 - **Itch.io:** https://fouzis.itch.io/unreal-ability-system-prototype-cpp
 
