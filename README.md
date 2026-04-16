@@ -2,7 +2,6 @@
 
 A third-person prototype demonstrating **Unreal Engine C++ gameplay systems architecture** — ability slots, projectile abilities, interface-based damage, and an event-driven HUD.
 
-Note: This is a lightweight custom ability system (not Epic’s Gameplay Ability System / GAS).
 ---
 
 ## Systems implemented
@@ -11,6 +10,7 @@ Note: This is a lightweight custom ability system (not Epic’s Gameplay Ability
 - **Interface-based damage** — `IDamageable` UINTERFACE decouples projectile from enemy class; any actor implementing the interface can receive damage
 - **Event-driven HUD** — `FOnSlotChanged` Dynamic Multicast Delegate drives slot updates; dynamic widget creation with no hard-coded slot count
 
+Note: This is a lightweight custom ability system (not Epic’s Gameplay Ability System / GAS).
 ---
 
 ## Quick links
